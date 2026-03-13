@@ -1,107 +1,43 @@
-# calculadora-el-trica
-calculadora elétrica
+# ⚡ Electrical Engineering Utility Suite
 
-
-# 🔌 Calculadora de Consumo de Energia
-
-Este projeto é um programa simples em **JavaScript** que calcula o **consumo diário e o custo mensal de energia elétrica** de um eletrodoméstico.
-
-O usuário informa a potência ou o consumo em kWh do aparelho e quantas horas ele fica ligado por dia. O programa então calcula o gasto aproximado de energia.
+Conjunto de ferramentas lógicas desenvolvidas em **JavaScript Vanilla** para automação de cálculos fundamentais em engenharia elétrica e eletrônica.
 
 ---
 
-## 📌 Funcionalidades
+## 🚀 Funcionalidades
 
-* Calcular consumo de energia baseado em **potência em Watts**
-* Calcular consumo baseado diretamente em **kWh**
-* Mostrar:
+O ecossistema é composto por três módulos principais:
 
-  * Consumo diário
-  * Custo diário
-  * Custo mensal aproximado
+### 1. Sistema de Gestão de Consumo Energético
+Algoritmo para estimativa de custos operacionais de dispositivos eletrodomésticos.
+* **Modos de Entrada:** Suporta Watts (W) ou entrada direta em kWh.
+* **Projeção Financeira:** Calcula o impacto econômico diário e mensal.
 
----
+### 2. Motor de Conversão de Escalas
+Conversor bidirecional de grandezas físicas utilizando o Sistema Internacional de Unidades (SI).
+* **Escopo:** De pico (p) até Giga (G).
+* **Lógica:** Converte automaticamente entre unidade base e escalas prefixadas.
 
-## ⚙️ Como funciona
-
-O programa pede algumas informações ao usuário:
-
-1. Nome do eletrodoméstico
-2. Modo de cálculo:
-
-   * `1` → Converter **Watts para kWh**
-   * `0` → Usar **kWh diretamente**
-3. Quantas horas por dia o aparelho fica ligado
-
-O valor da energia utilizado no cálculo é **R$ 0,90 por kWh**.
+### 3. Decodificador de Resistores
+Interpretador de resistores baseado no código de cores internacional.
+* **Arquitetura:** Suporta resistores de **4 e 5 faixas**.
+* **Saída:** Valor em Ohms ($\Omega$) e margem de tolerância.
 
 ---
 
-## 🧮 Fórmulas utilizadas
+## 🛠️ Detalhes Técnicos
 
-### Conversão de Watts para kWh
-
-```
-kWh = potência (W) / 1000
-```
-
-### Consumo diário
-
-```
-consumoDiario = kWh × horas
-```
-
-### Custo diário
-
-```
-custoDiario = consumoDiario × preço do kWh
-```
-
-### Custo mensal
-
-```
-custoMensal = custoDiario × 30
-```
+* **Imutabilidade:** Uso de `const` para dicionários de cores e fatores.
+* **UX:** Saídas formatadas via Template Literals.
+* **Robustez:** Normalização de strings (Case-insensitive).
 
 ---
 
-## 💻 Exemplo de uso
+## 📋 Como Utilizar
 
-Entrada do usuário:
-
-```
-Eletrodoméstico: Microondas
-Modo de conversão: 1
-Potência: 1000 W
-Horas ligado por dia: 2
-```
-
-Saída no console:
-
-```
-O consumo diário é: R$ 1.8
-O consumo no mês é: R$ 54
-```
+Como os scripts utilizam métodos globais de interface (`prompt` e `alert`), eles podem ser executados:
+1. Diretamente no console do navegador (F12).
+2. Integrados a um arquivo `.html`.
 
 ---
-
-## 🚀 Tecnologias utilizadas
-
-* JavaScript
-* Execução via **Console / Navegador**
-
----
-
-## 📚 Objetivo do projeto
-
-Este projeto foi desenvolvido para **praticar lógica de programação e JavaScript**, trabalhando com:
-
-* Variáveis
-* Estruturas condicionais (`if` / `else`)
-* Entrada de dados com `prompt`
-* Saída de dados com `console.log`
-
----
-
-
-
+**Desenvolvido por Seu Nome**

@@ -27,3 +27,4 @@ consumoNoMes = custoDiario * 30;
 
 console.log("O consumo diário é: R$", custoDiario);
 console.log("O consumo no mês é: R$", consumoNoMes);
+
