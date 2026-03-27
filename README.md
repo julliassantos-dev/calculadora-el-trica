@@ -1,5 +1,54 @@
+# ⚡ Calculadora de Engenharia Elétrica
 
+Este projeto é uma ferramenta baseada em JavaScript para realizar cálculos fundamentais de eletricidade e eletrônica diretamente no navegador.
 
+---
 
-⚡ EletroCalc: Calculadora de Engenharia ElétricaUma ferramenta multifuncional desenvolvida em JavaScript para realizar cálculos rápidos de leis da física, circuitos elétricos e consumo de energia. Ideal para estudantes, entusiastas de eletrônica e profissionais que precisam de agilidade no dia a dia.🚀 FuncionalidadesO script é composto por seis módulos principais:1. 🔍 Lei de Ohm (calcOhm)Calcula uma das três grandezas fundamentais da eletricidade com base em duas entradas fornecidas:Tensão (V)Corrente (I)Resistência (R)Fórmula base:$$V = R \cdot I$$2. 🔌 Resistência Equivalente (calcReq)Determina a resistência total de um conjunto de resistores, aceitando uma quantidade ilimitada de componentes.Série: Soma direta das resistências.Paralelo: Soma dos inversos ($$1/Req = 1/R1 + 1/R2...$$).3. 💰 Consumo de Energia (calcConsumo)Calcula o gasto energético de eletrodomésticos.Suporta entrada em Watts ou diretamente em kWh.Gera um relatório completo com: Consumo Diário/Mensal e Custo Estimado (R$).4. 📏 Conversor de Prefixos (calcPrefixos)Converte valores entre a unidade principal e escalas métricas (Giga, Mega, Kilo, mili, micro, nano e pico). Útil para lidar com capacitores, indutores e grandes potências.5. 🎨 Código de Cores de Resistores (calcResistor)Identifica o valor de um resistor físico através de suas faixas coloridas.Suporta resistores de 4 e 5 faixas.Calcula o valor em Ohms e a porcentagem de tolerância.Formatação automática para KΩ e MΩ.6. 🔋 Potência Elétrica (calcPotencia)Cálculo simples e direto da potência dissipada ou consumida em um circuito.Entrada: Tensão (V) e Corrente (I).Saída: Watts (W) e Kilowatts (kW).🛠️ Como UsarPara utilizar as funções, você pode integrar o código ao seu projeto web ou executá-lo diretamente no console do navegador (F12).Copie o código JavaScript.No seu arquivo HTML, chame a função desejada através de um botão ou evento:HTML<button onclick="calcOhm()">Calcular Lei de Ohm</button>
-Siga as instruções que aparecerão nos prompts da tela.💻 Tecnologias UtilizadasLinguagem: JavaScript (ES6+)Interface: Navegador (via prompt e alert)📝 Observações TécnicasO script utiliza parseFloat() para garantir que cálculos decimais sejam precisos.A função de código de cores possui um tratamento de erro básico para cores não reconhecidas.Os resultados de custo financeiro e consumo são fixados em duas casas decimais para melhor leitura.
+## 🚀 Funcionalidades
+
+### 1. Lei de Ohm
+Calcula Tensão (V), Corrente (I) ou Resistência (R).
+* **Fórmula:** V = R * I
+
+### 2. Resistência Equivalente
+Calcula a resistência total para circuitos em:
+* **Série:** Soma simples dos resistores.
+* **Paralelo:** Soma dos inversos das resistências.
+
+### 3. Consumo de Energia
+Gera um relatório de gastos para eletrodomésticos.
+* Calcula consumo diário e mensal em kWh.
+* Estima o custo em Reais (R$) com base na taxa da concessionária.
+
+### 4. Conversor de Prefixos
+Realiza a conversão de unidades para escalas métricas:
+* Múltiplos: Giga (G), Mega (M), Kilo (k).
+* Submúltiplos: mili (m), micro (u), nano (n), pico (p).
+
+### 5. Código de Cores de Resistores
+Identifica o valor nominal de resistores de **4 ou 5 faixas**.
+* Tradução de cores para valores numéricos e multiplicadores.
+* Cálculo de tolerância e formatação automática (Ω, KΩ, MΩ).
+
+### 6. Potência Elétrica
+Calcula a potência ativa de um circuito.
+* **Entrada:** Tensão (V) e Corrente (A).
+* **Saída:** Watts (W) e Kilowatts (kW).
+
+---
+
+## 🛠️ Como Executar
+
+O código utiliza as funções `prompt()` e `alert()` do navegador. Para testar:
+
+1.  Abra qualquer página no seu navegador (Ex: Google Chrome).
+2.  Pressione `F12` para abrir o **Console do Desenvolvedor**.
+3.  Cole o código JavaScript das funções.
+4.  Chame a função desejada digitando o nome dela no console, por exemplo: `calcOhm();`
+
+---
+
+## 💻 Tecnologias
+* JavaScript (Lógica de programação)
+* Markdown (Documentação)
+
