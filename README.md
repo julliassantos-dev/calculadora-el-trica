@@ -1,43 +1,5 @@
-# ⚡ Electrical Engineering Utility Suite
 
-Conjunto de ferramentas lógicas desenvolvidas em **JavaScript Vanilla** para automação de cálculos fundamentais em engenharia elétrica e eletrônica.
 
----
 
-## 🚀 Funcionalidades
-
-O ecossistema é composto por três módulos principais:
-
-### 1. Sistema de Gestão de Consumo Energético
-Algoritmo para estimativa de custos operacionais de dispositivos eletrodomésticos.
-* **Modos de Entrada:** Suporta Watts (W) ou entrada direta em kWh.
-* **Projeção Financeira:** Calcula o impacto econômico diário e mensal.
-
-### 2. Motor de Conversão de Escalas
-Conversor bidirecional de grandezas físicas utilizando o Sistema Internacional de Unidades (SI).
-* **Escopo:** De pico (p) até Giga (G).
-* **Lógica:** Converte automaticamente entre unidade base e escalas prefixadas.
-
-### 3. Decodificador de Resistores
-Interpretador de resistores baseado no código de cores internacional.
-* **Arquitetura:** Suporta resistores de **4 e 5 faixas**.
-* **Saída:** Valor em Ohms ($\Omega$) e margem de tolerância.
-
----
-
-## 🛠️ Detalhes Técnicos
-
-* **Imutabilidade:** Uso de `const` para dicionários de cores e fatores.
-* **UX:** Saídas formatadas via Template Literals.
-* **Robustez:** Normalização de strings (Case-insensitive).
-
----
-
-## 📋 Como Utilizar
-
-Como os scripts utilizam métodos globais de interface (`prompt` e `alert`), eles podem ser executados:
-1. Diretamente no console do navegador (F12).
-2. Integrados a um arquivo `.html`.
-
----
-**Desenvolvido por Seu Nome**
+⚡ EletroCalc: Calculadora de Engenharia ElétricaUma ferramenta multifuncional desenvolvida em JavaScript para realizar cálculos rápidos de leis da física, circuitos elétricos e consumo de energia. Ideal para estudantes, entusiastas de eletrônica e profissionais que precisam de agilidade no dia a dia.🚀 FuncionalidadesO script é composto por seis módulos principais:1. 🔍 Lei de Ohm (calcOhm)Calcula uma das três grandezas fundamentais da eletricidade com base em duas entradas fornecidas:Tensão (V)Corrente (I)Resistência (R)Fórmula base:$$V = R \cdot I$$2. 🔌 Resistência Equivalente (calcReq)Determina a resistência total de um conjunto de resistores, aceitando uma quantidade ilimitada de componentes.Série: Soma direta das resistências.Paralelo: Soma dos inversos ($$1/Req = 1/R1 + 1/R2...$$).3. 💰 Consumo de Energia (calcConsumo)Calcula o gasto energético de eletrodomésticos.Suporta entrada em Watts ou diretamente em kWh.Gera um relatório completo com: Consumo Diário/Mensal e Custo Estimado (R$).4. 📏 Conversor de Prefixos (calcPrefixos)Converte valores entre a unidade principal e escalas métricas (Giga, Mega, Kilo, mili, micro, nano e pico). Útil para lidar com capacitores, indutores e grandes potências.5. 🎨 Código de Cores de Resistores (calcResistor)Identifica o valor de um resistor físico através de suas faixas coloridas.Suporta resistores de 4 e 5 faixas.Calcula o valor em Ohms e a porcentagem de tolerância.Formatação automática para KΩ e MΩ.6. 🔋 Potência Elétrica (calcPotencia)Cálculo simples e direto da potência dissipada ou consumida em um circuito.Entrada: Tensão (V) e Corrente (I).Saída: Watts (W) e Kilowatts (kW).🛠️ Como UsarPara utilizar as funções, você pode integrar o código ao seu projeto web ou executá-lo diretamente no console do navegador (F12).Copie o código JavaScript.No seu arquivo HTML, chame a função desejada através de um botão ou evento:HTML<button onclick="calcOhm()">Calcular Lei de Ohm</button>
+Siga as instruções que aparecerão nos prompts da tela.💻 Tecnologias UtilizadasLinguagem: JavaScript (ES6+)Interface: Navegador (via prompt e alert)📝 Observações TécnicasO script utiliza parseFloat() para garantir que cálculos decimais sejam precisos.A função de código de cores possui um tratamento de erro básico para cores não reconhecidas.Os resultados de custo financeiro e consumo são fixados em duas casas decimais para melhor leitura.

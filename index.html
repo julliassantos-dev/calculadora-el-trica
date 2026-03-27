@@ -1,13 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora Elétrica completa</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('https://media.istockphoto.com/id/876690470/pt/vetorial/electricity-seamless-pattern-background-icon-business-flat-vector-illustration-electricity.jpg?s=1024x1024&w=is&k=20&c=j_5hWIL6_woIdmueVfWUpaIMD6VGG6D4WIOY_SX3Sxc=');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .wrapper {
+            width: 400px;
+            
+            background: rgba(0, 0, 0, 0.9); 
+            
+            border: 2px solid #bb7af0; /*borda roxa*/
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 20px;
+            padding: 30px 40px;
+        }
+
+        .wrapper h1 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #bb7af0; /* Título */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        
+        .btn-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 15px 0;
+        }
+
+        .btn-box button {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            font-size: 16px;
+            color: #1a1a1a;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-box button:hover {
+            background: #bb7af0; /* Botão fica roxo*/
+            color: #000;
+            transform: scale(1.02); /* Dá um leve aumento */
+        }
+
+        .footer-text {
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px;
+            color: #bb7af0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
-    <script src="calculadoraMult&Sub.js"></script>
 
+    <div class="wrapper">
+        <h1>Calculadora de Serviços Elétricos ⚡</h1>
+        
+        <div class="btn-box">
+            <button onclick="calcOhm()">Lei de Ohm</button>
+        </div>
+        
+        <div class="btn-box">
+            <button onclick="calcReq()">Resistência Eq.</button>
+        </div>
+        
+        <div class="btn-box">
+            <button onclick="calcConsumo()">Consumo kWh</button>
+        </div>
+        
+        <div class="btn-box">
+            <button onclick="calcPrefixos()">Múltiplos/Sub.</button>
+        </div>
+        <div class="btn-box">
+            <button onclick="calcPotencia()">Potência</button>
+        </div>
+        
+
+        <div class="footer-text">
+            <p>Calculadora completa</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
